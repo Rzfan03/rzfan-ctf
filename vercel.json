@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/post1", "destination": "/post1/index.html" },
+    { "source": "/post2", "destination": "/post2/index.html" },
+    { "source": "/post3", "destination": "/post3/index.html" },
+    { "source": "/post4", "destination": "/post4/index.html" }
+  ]
+}
