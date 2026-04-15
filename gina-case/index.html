@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jurnal Rzfann - Blog pribadi jurnalis independen dari Bali">
+    <title>Blog Jurnalis Independen</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --primary: #1e3a8a;
+            --text: #222;
+            --light: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            background: #fff;
+        }
+        
+        header {
+            background: white;
+            border-bottom: 3px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(30,58,138,0.85), rgba(30,58,138,0.75)), url('https://picsum.photos/id/1016/2000/1000') center/cover no-repeat;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+        }
+        
+        .post-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .post-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .post-content {
+            padding: 1.5rem;
+        }
+        
+        .post-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+        
+        .post-meta {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        footer {
+            background: #f8f9fa;
+            padding: 3rem 2rem;
+            text-align: center;
+            color: #555;
+            border-top: 1px solid #ddd;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.4rem; }
+            .posts-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">Blog Gina Melina</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="#">TENTANG SAYA</a></li>
+                    <li><a href="#">POSTINGAN</a></li>
+                    <li><a href="#">KONTAK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Selamat Datang di Blog Gina Melina</h1>
+        <p>Blog pribadi seorang jurnalis independen,<br>Menulis cerita, pengalaman, dan pemikiran sehari-hari.</p>
+    </section>
+
+    <div class="main">
+        <h2 style="margin-bottom:2rem; font-size:2rem; text-align:center;">Postingan Terbaru</h2>
+        
+        <div class="posts-grid">
+            
+            <!-- Post 1 -->
+            <div class="post-card">
+                <img src="https://picsum.photos/id/1015/800/600" alt="Post 1">
+                <div class="post-content">
+                    <div class="post-meta">10 April 2026 • 4 menit baca</div>
+                    <h2>5 Tips Menjadi Jurnalis Lebih Baik di Era Digital</h2>
+                    <p>Dari menulis cepat hingga verifikasi fakta, ini tips praktis yang saya pelajari selama 5 tahun jadi jurnalis freelance...</p>
+                    <a href="post1.html" class="read-more">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            
+            <!-- Post 2 -->
+            <div class="post-card">
+                <img src="https://picsum.photos/id/133/800/600" alt="Post 2">
+                <div class="post-content">
+                    <div class="post-meta">5 April 2026 • 6 menit baca</div>
+                    <h2>Pengalaman Meliput Festival Seni di Ubud</h2>
+                    <p>Bagaimana suasana festival seni tahun ini dan apa saja yang bisa kita pelajari dari para seniman lokal Bali...</p>
+                    <a href="post2.html" class="read-more">Baca Selengkapnya →</a>
+                </div>
+            </div>
+            
+            <!-- Post 3 -->
+            <div class="post-card">
+                <img src="https://picsum.photos/id/201/800/600" alt="Post 3">
+                <div class="post-content">
+                    <div class="post-meta">1 April 2026 • 3 menit baca</div>
+                    <h2>Mengapa Etika Jurnalisme Masih Sangat Penting</h2>
+                    <p>Di tengah banjir informasi, menjaga kebenaran dan netralitas adalah kunci. Ini pemikiran saya sebagai jurnalis...</p>
+                    <a href="post3.html" class="read-more">Baca Selengkapnya →</a>
+                </div>
+            </div>
+        <p><a style="color: white;" href="post4.html" class="read-more">SecretPost!</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Jurnal Gina Melina © 2026 • Blog pribadi jurnalis independen dari Denpasar, Bali</p>
+        <p style="margin-top:1rem; font-size:0.9rem;">Website ini dibuat sederhana dengan HTML + CSS saja. Siap pakai!</p>
+    </footer>
+</body>
+</html>
